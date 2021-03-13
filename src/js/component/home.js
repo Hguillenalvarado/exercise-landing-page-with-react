@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { NavBar } from "./NavBar.js";
 import { Jumbotron } from "./Jumbotron.js";
 import { Cards } from "./Cards.js";
@@ -14,3 +15,5 @@ export function Home() {
 		</div>
 	);
 }
+
+ReactDOM.render(<Home />, document.querySelector("#app"));
